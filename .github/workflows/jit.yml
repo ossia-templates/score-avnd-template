@@ -4,13 +4,13 @@ on: push
 
 jobs:
   build:
-    name: "${{ matrix.config.name }} ${{ matrix.config.version }}"
+    name: "${{ matrix.config.name }} ${{ matrix.version }}"
     runs-on: ${{ matrix.config.os }}
     timeout-minutes: 10
     strategy:
       fail-fast: false
       matrix:
-        version: [3.0.8]
+        version: [ 3.0.8 ]
         config:
           - {
               name: "Windows",
