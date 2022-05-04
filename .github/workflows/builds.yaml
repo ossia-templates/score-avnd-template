@@ -61,7 +61,7 @@ jobs:
         shell: bash
         run: |
           cd score
-          tools/fetch-sdk.sh continuous
+          tools/fetch-sdk.sh
 
       - name: Build debug
         shell: bash
