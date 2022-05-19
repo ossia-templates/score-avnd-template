@@ -24,9 +24,11 @@ if [[ ! -x "$RENAME" ]] ; then
 fi
 
 RENAME_KIND=$($RENAME --help | grep -i PERLEXPR)
+if [[ "$OSTYPE" != "darwin"* ]]; then
 if [[ "$RENAME_KIND" == "" ]]; then
   echo "Install perl-rename (sometimes called just 'rename')"
   exit 1
+fi
 fi
 
 SED=/usr/bin/sed
@@ -35,7 +37,7 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
     echo "Install gnu-sed"
     exit 1
   fi
-  SED=/usr/bin/gsed
+  SED=$(command -v gsed)
 fi
 
 
