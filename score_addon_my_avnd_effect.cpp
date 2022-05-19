@@ -1,5 +1,5 @@
 #include "score_addon_my_avnd_effect.hpp"
-#include <MyAvndEffect/AnEffect.hpp>
+#include <MyAvndEffect/MyAvndEffect.hpp>
 
 #include <Avnd/Factories.hpp>
 #include <score/plugins/FactorySetup.hpp>
@@ -16,7 +16,7 @@ score_addon_my_avnd_effect::factories(
     const score::ApplicationContext& ctx,
     const score::InterfaceKey& key) const
 {
-  return Avnd::instantiate_fx<MyAvndEffect::AnEffect>(ctx, key);
+  return Avnd::instantiate_fx<MyAvndEffect::MyAvndEffect>(ctx, key);
 }
 
 std::vector<score::PluginKey> score_addon_my_avnd_effect::required() const

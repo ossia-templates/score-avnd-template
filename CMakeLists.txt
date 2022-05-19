@@ -8,10 +8,10 @@ project(score_addon_my_avnd_effect LANGUAGES CXX)
 
 add_library(
   score_addon_my_avnd_effect
-  MyAvndEffect/AnEffectModel.hpp
-  MyAvndEffect/AnEffectModel.cpp
-  MyAvndEffect/AnEffectUi.hpp
-  MyAvndEffect/AnEffect.hpp
+  MyAvndEffect/MyAvndEffectModel.hpp
+  MyAvndEffect/MyAvndEffectModel.cpp
+  MyAvndEffect/MyAvndEffectUi.hpp
+  MyAvndEffect/MyAvndEffect.hpp
 
   score_addon_my_avnd_effect.hpp
   score_addon_my_avnd_effect.cpp

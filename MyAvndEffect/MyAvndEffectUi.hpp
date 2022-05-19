@@ -1,10 +1,10 @@
 #pragma once
-#include <MyAvndEffect/AnEffectModel.hpp>
+#include <MyAvndEffect/MyAvndEffectModel.hpp>
 #include <halp/layout.hpp>
 
 namespace MyAvndEffect
 {
-struct AnEffect::ui
+struct MyAvndEffect::ui
 {
   using enum halp::colors;
   using enum halp::layouts;

@@ -1,8 +1,8 @@
-#include "AnEffect.hpp"
+#include "MyAvndEffect.hpp"
 
 namespace MyAvndEffect
 {
-void AnEffect::operator()(halp::tick t)
+void MyAvndEffect::operator()(halp::tick t)
 {
   // Process the input buffer
   for (int i = 0; i < inputs.audio.channels; i++)
