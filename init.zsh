@@ -1,6 +1,4 @@
-#!/bin/bash
-
-shopt -s globstar
+#!/bin/zsh
 
 # Check script options
 if [[ "$#" -lt 1 ]]; then
