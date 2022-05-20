@@ -2,12 +2,12 @@
 
 # Check script options
 if [[ "$#" -lt 1 ]]; then
-    echo "Usage: ./init.sh MyAddonName [folder]"
+    echo "Usage: ./init.zsh MyAddonName [folder]"
     exit 1
 fi
 
 if [[ $(echo "$1" | head -c 1) == "-" ]]; then
-    echo "Usage: ./init.sh MyAddonName [folder]"
+    echo "Usage: ./init.zsh MyAddonName [folder]"
     exit 1
 fi
 
