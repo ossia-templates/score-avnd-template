@@ -16,7 +16,9 @@ score_addon_my_avnd_effect::factories(
     const score::ApplicationContext& ctx,
     const score::InterfaceKey& key) const
 {
-  return Avnd::instantiate_fx<MyAvndEffect::MyAvndEffect>(ctx, key);
+  std::vector<std::unique_ptr<score::InterfaceBase>> fx;
+  Avnd::instantiate_fx<MyAvndEffect::MyAvndEffect>(fx, ctx, key);
+  return fx;
 }
 
 std::vector<score::PluginKey> score_addon_my_avnd_effect::required() const
