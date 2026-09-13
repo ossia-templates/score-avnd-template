@@ -16,9 +16,9 @@ public:
   ~score_addon_my_avnd_effect() override;
 
 private:
-  std::vector<std::unique_ptr<score::InterfaceBase>> factories(
-      const score::ApplicationContext&,
-      const score::InterfaceKey& factoryName) const override;
+  std::vector<score::InterfaceBase*> factories(
+      const score::ApplicationContext& ctx,
+      const score::InterfaceKey& key) const override;
 
   std::vector<score::PluginKey> required() const override;
 };

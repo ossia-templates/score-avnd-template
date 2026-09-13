@@ -17,6 +17,9 @@ add_library(
   score_addon_my_avnd_effect.cpp
 )
 
-setup_score_plugin(score_addon_my_avnd_effect)
+setup_score_addon(
+  TARGET score_addon_my_avnd_effect
+  NAME "My Avnd Effect"
+)
 
 target_link_libraries(score_addon_my_avnd_effect PUBLIC score_plugin_engine score_plugin_avnd)

@@ -11,12 +11,11 @@
 score_addon_my_avnd_effect::score_addon_my_avnd_effect() = default;
 score_addon_my_avnd_effect::~score_addon_my_avnd_effect() = default;
 
-std::vector<std::unique_ptr<score::InterfaceBase>>
-score_addon_my_avnd_effect::factories(
+std::vector<score::InterfaceBase*> score_addon_my_avnd_effect::factories(
     const score::ApplicationContext& ctx,
     const score::InterfaceKey& key) const
 {
-  std::vector<std::unique_ptr<score::InterfaceBase>> fx;
+  std::vector<score::InterfaceBase*> fx;
   Avnd::instantiate_fx<MyAvndEffect::MyAvndEffect>(fx, ctx, key);
   return fx;
 }
